@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'segoe UI',
+sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9
+    color: #333
+}
+container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+header{
+    background: #003366;
+    color: red;
+    padding: 20px 0;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    margin-top: 10px;
+}
+nav a{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.hero{
+    background: url('https://via.placeholder.com/1200*400')
+    center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+}
+.hero .btn{
+    display: inline-block;
+    margin-top: 20px;
+    background: #0066;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.section{
+    padding: 60px 0;
+}
+.section h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.gird{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    background: white;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+    border-radius: 6px;
+}
+.dark{
+    background: #333;
+    color: white;
+}
+footer{
+    text-align: center;
+    background: #eee;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+@media (max-width: 768px){
+    .girl{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="Nom">Nom</label>
+        <input type="text" id="Nom" name="Nom"/>
+        <input type="submit" value="Envoyer"/>
+    </form>
+   <header>
+       <div class="container">
+           <h1>Mon portfolio</h1>
+           <nav>
+               <a href="#accueil">accueil</a>
+               <a href="#services">services</a>
+               <a href="#apropos">apropos</a>
+               <a href="#contact">contact</a>
+            </nav>
+       </div>
+   </header> 
+   <section id="accueil"class="hero">
+       <div class="container">
+            <h2>Bienvenue!</h2>
+            <p>Développeur passionné, créateur de site web modernes.</p>
+            <a href="#contact" class="btn">contacter-moi</a>
+       </div>
+   </section>
+   <section id="service"class="service">
+        <div class="container">
+            <h2>Mes services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Développement web</h3>
+                    <p>création de sites rapides et disponible</p>
+                </div>
+          </div>
+          <div class="card">
+            <!-- <h3>design UX/UI</h3> -->
+            <p>Interfaces moderne, claire et efficace</p>
+          <div class="card">
+            <h3>optimisation SEO</h3>
+            <p>Amelioration de la visibilité sur google.</p>
+          </div>  
+          </div>
+        </div>
+    </section>
+    <section id="apropos"class="apropos">
+        <div class="container">
+            <h2>Tout savoir sur mon projet</h2>
+            <p>Je me nomme Kem Gahe j'aime l'informatique. <br/>Mon but est de créé un site qui mettra des article en ligne</p>
+        </div>
+    </section>
+    <section id="contact"class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>pour plus de renseignement consulter ce mail: <a href="mailto:Yvanngahe@02.com">Yvanngahe@02.com</a></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 21/06/2025 à Abidjan</p>
+    </footer>
+</body>
+</html>
